@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+html, body { height: 100%; }
+
+body { @apply bg-white text-gray-900; }
+
+.container-prose { @apply prose max-w-none prose-brand prose-headings:font-semibold; }
+
+@media print {
+  .no-print { display: none !important; }
+}
